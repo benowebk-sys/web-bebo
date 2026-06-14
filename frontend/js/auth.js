@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3200/api'; // Local development
+const API_URL = '/api'; // Use relative path for production and deployment
 // For production: 'https://your-api.vercel.app/api'
 
 // Tab switching
