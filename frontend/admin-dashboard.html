@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebo Group - لوحة التحكم</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="sidebar">
+            <h3> لوحة التحكم</h3>
+            <ul class="sidebar-nav">
+                <li><button onclick="showSection('stats')" class="active" data-section="stats"> إحصائيات</button></li>
+                <li><button onclick="showSection('terms')" data-section="terms">الفصول الدراسيه</button></li>
+                <li><button onclick="showSection('subjects')" data-section="subjects"> المواد</button></li>
+                <li><button onclick="showSection('materials')" data-section="materials"> المحتوى</button></li>
+                <li><button onclick="showSection('users')" data-section="users"> الطلاب</button></li>
+            </ul>
+            <div class="sidebar-footer">
+                <button onclick="logout()" class="btn-small full-width"> خروج</button>
+            </div>
+        </aside>
+
+        <main class="admin-content" id="admin-content">
+            <!-- Content loaded dynamically -->
+        </main>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

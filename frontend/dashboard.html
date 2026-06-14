@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebo Group - المحتوى الدراسي</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h2> Bebo Group</h2>
+            <div class="header-user">
+                <span id="user-name">طالب</span>
+                <button onclick="logout()" class="btn-small">خروج</button>
+            </div>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>جاري تحميل المحتوى...</p>
+        </div>
+
+        <div id="terms-container" class="terms-grid hidden"></div>
+    </div>
+
+    <!-- Materials Modal -->
+    <div id="materials-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">المحتوى الدراسي</h3>
+                <button onclick="closeModal()" class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="materials-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/student.js"></script>
+</body>
+</html>
